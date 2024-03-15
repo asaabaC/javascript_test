@@ -1,0 +1,20 @@
+function sumOrTripleSum(a, b) {
+    let sum = a + b;
+    if (a === b) {
+        return 3 * sum;
+    } else {
+        return sum;
+    }
+}
+
+// for two similar numbers
+let num1 = 5;
+let num2 = 5;
+console.log("Numbers:", num1, "and", num2);
+console.log("Result:", sumOrTripleSum(num1, num2));
+
+// for different numbers
+let num3 = 3;
+let num4 = 7;
+console.log("Numbers:", num3, "and", num4);
+console.log("Result:", sumOrTripleSum(num3, num4));

@@ -1,0 +1,17 @@
+function swapCase(str) {
+  var swapped = '';
+  for (var i = 0; i < str.length; i++) {
+    var char = str.charAt(i);
+    if (char === char.toUpperCase()) {
+      swapped += char.toLowerCase();
+    } else {
+      swapped += char.toUpperCase();
+    }
+  }
+  return swapped;
+}
+
+// Example usage:
+var input = "hElLo";
+var output = swapCase(input);
+console.log(output); // Output: "HeLlO"
